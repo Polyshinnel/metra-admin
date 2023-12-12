@@ -1,11 +1,16 @@
 $(document).ready(function(){
-    $('.banner-block').owlCarousel({
-        loop: true,
-        items: 1,
-        nav: false,
-        dots: true
-    });
+    let selector = $('.banner-block');
+    if(selector.length) {
+        selector.owlCarousel({
+            loop: true,
+            items: 1,
+            nav: false,
+            dots: true
+        });
+    }
+
 });
+
 
 $('.menu-btn').click(function(){
     $('.header-menu').slideToggle();
