@@ -25,4 +25,5 @@ Route::middleware([\App\Http\Middleware\CheckUser::class])->group(function(){
     Route::get('/', HomeController::class);
 
     Route::get('/dealers', [\App\Http\Controllers\DealersController::class, 'index']);
+    Route::get('/dealers/{user}', [\App\Http\Controllers\DealersController::class, 'show']);
 });

@@ -52,7 +52,11 @@
 
                             <div class="option-list absolute right-0 top-full mt-1 py-4 px-5 border border-gray-300 rounded bg-white z-10 hidden">
                                 <ul>
-                                    <li class="text-blue-600 hover:text-blue-800 transition-all cursor-pointer duration-300">Редактировать</li>
+                                    <li class="text-blue-600 hover:text-blue-800 transition-all cursor-pointer duration-300">
+                                        <a href="/dealers/{{$dealer['id']}}">
+                                            Просмотр
+                                        </a>
+                                    </li>
                                     <li class="text-red-500 hover:text-red-800 transition-all cursor-pointer duration-300 mt-1">Удалить</li>
                                 </ul>
                             </div>
