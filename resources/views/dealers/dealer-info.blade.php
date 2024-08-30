@@ -23,7 +23,7 @@
                 <img class="ml-4" src="/img/admin/dealers/flags/ru.png" alt="">
             @elseif($dealer_info['country'] == 'kz')
                 <img class="ml-4" src="/img/admin/dealers/flags/kz.png" alt="">
-            @elseif($dealer_info['country'] == 'be')
+            @elseif($dealer_info['country'] == 'bel')
                 <img class="ml-4" src="/img/admin/dealers/flags/be.png" alt="">
             @endif
 

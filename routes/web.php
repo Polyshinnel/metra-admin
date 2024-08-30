@@ -26,4 +26,5 @@ Route::middleware([\App\Http\Middleware\CheckUser::class])->group(function(){
 
     Route::get('/dealers', [\App\Http\Controllers\DealersController::class, 'index']);
     Route::get('/dealers/{user}', [\App\Http\Controllers\DealersController::class, 'show']);
+    Route::get('/notifications', [\App\Http\Controllers\NotificationController::class, 'index']);
 });
