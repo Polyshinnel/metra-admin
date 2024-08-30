@@ -52,7 +52,7 @@
                                 </div>
 
                             </div>
-                            <p class="notification-date text-gray-400 text-xs mt-1">Создано: {{$notification['notification_text']}}</p>
+                            <p class="notification-date text-gray-400 text-xs mt-1">Создано: {{$notification['date_create']}}</p>
                         </div>
                     </div>
                 @endif
