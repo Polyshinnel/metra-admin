@@ -12,7 +12,7 @@
 
     <div class="notification-wrapper">
         @if($notifications)
-
+            <button class="mt-8 px-4 bg-blue-600 text-white h-9 rounded hover:bg-blue-800 transition-all duration-300" data-fancybox data-src="#add-notification-form">Новое оповещение</button>
             @foreach($notifications as $notification)
                 @if($notification['publish_status'])
                     <div class="notification-item flex items-start py-4 px-5 border rounded-lg border-gray-400 mt-5">
@@ -57,7 +57,7 @@
                     </div>
                 @endif
             @endforeach
-            <button class="mt-8 px-4 bg-blue-600 text-white h-9 rounded hover:bg-blue-800 transition-all duration-300" data-fancybox data-src="#add-notification-form">Новое оповещение</button>
+
         @else
             <div class="notification-empty mt-8">
                 <h2 class="text-lg font-light">На данный момент уведомления отсутствуют!</h2>
