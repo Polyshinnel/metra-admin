@@ -14,7 +14,7 @@
         @if($notifications)
 
             @foreach($notifications as $notification)
-                @if(!$notification['publish_status'])
+                @if($notification['publish_status'])
                     <div class="notification-item flex items-start py-4 px-5 border rounded-lg border-gray-400 mt-5">
                         <div class="notification-item__img w-12 h-12 flex items-center justify-center rounded-full bg-blue-700 mt-1">
                             @if($notification['notification_type'] == '1')
