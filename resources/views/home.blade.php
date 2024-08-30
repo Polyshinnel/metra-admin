@@ -63,4 +63,90 @@
             </a>
         </div>
     </div>
+
+    <div class="dashboard-counts mt-8">
+        <h2 class="text-2xl font-semibold">Статистика</h2>
+        <div class="dashboard-counts__wrapper flex flex-wrap -ml-10 mt-4">
+            <div class="dashboard-count bg-blue-50 p-4 rounded w-64 ml-10">
+                <div class="dashboard-count__title">
+                    <p class="font-semibold text-xs">Поситителей в сутки</p>
+                </div>
+
+                <div class="dashboard-count__counts flex mt-4 justify-between items-center">
+                    <span class="font-semibold text-2xl">120</span>
+                    <div class="dashboard-count__count-percent">
+                        <p class="text-sm">+10%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-count bg-blue-50 p-4 rounded w-64 ml-10">
+                <div class="dashboard-count__title">
+                    <p class="font-semibold text-xs">Скачано ТКП</p>
+                </div>
+
+                <div class="dashboard-count__counts flex mt-4 justify-between items-center">
+                    <span class="font-semibold text-2xl">120</span>
+                    <div class="dashboard-count__count-percent">
+                        <p class="text-sm">+10%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-count bg-blue-50 p-4 rounded w-64 ml-10">
+                <div class="dashboard-count__title">
+                    <p class="font-semibold text-xs">Активных диллеров</p>
+                </div>
+
+                <div class="dashboard-count__counts flex mt-4 justify-between items-center">
+                    <span class="font-semibold text-2xl">120</span>
+                    <div class="dashboard-count__count-percent">
+                        <p class="text-sm">+10%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="charts-block mt-8">
+        <h2 class="text-2xl font-semibold">Графики</h2>
+
+        <canvas id="myChart" class="w-full mt-5" style="height: 300px;"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Январь', 'Февраль', "Март", "Апрель", "Май", "Июнь", "Июль"],
+                datasets: [
+                    {
+                        label: 'Количество посетителей',
+                        data: [12, 15, 64, 78, 25, 44, 72],
+                        fill: false,
+                        borderColor: 'rgb(255, 0, 0)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Скачано ТКП',
+                        data: [65, 59, 80, 81, 56, 55, 40],
+                        fill: false,
+                        borderColor: 'rgb(0, 255, 0)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Активных диллеров',
+                        data: [65, 51, 47, 35, 79, 10, 60],
+                        fill: false,
+                        borderColor: 'rgb(0, 0, 255)',
+                        tension: 0.1
+                    },
+                ]
+            },
+        });
+    </script>
 @endsection
