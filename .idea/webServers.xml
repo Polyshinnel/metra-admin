@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="83e36ff8-464e-4a15-b29b-6b4c64a92b61" name="metra" url="https://admin-metra.deploy-server.ru/">
+        <fileTransfer rootFolder="/home/admin-domain/web/admin-metra.deploy-server.ru/public_html" accessType="SFTP" host="92.255.107.54" port="22" sshConfigId="4f8b5cd7-a83b-4ee0-ae78-a2645bcd0bcf" sshConfig="root@92.255.107.54:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

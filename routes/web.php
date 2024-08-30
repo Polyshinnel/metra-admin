@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+
+Route::get('/auth', \App\Http\Controllers\LoginController::class);
+
+Route::post('/auth', AuthController::class);
+
+Route::middleware([\App\Http\Middleware\CheckUser::class])->group(function(){
+    Route::get('/', HomeController::class);
 });
