@@ -23,4 +23,6 @@ Route::post('/auth', AuthController::class);
 
 Route::middleware([\App\Http\Middleware\CheckUser::class])->group(function(){
     Route::get('/', HomeController::class);
+
+    Route::get('/dealers', [\App\Http\Controllers\DealersController::class, 'index']);
 });

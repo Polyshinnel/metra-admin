@@ -6,7 +6,7 @@
         <h1 class="text-2xl font-semibold">Быстрый доступ</h1>
 
         <div class="dashboard-bnts flex flex-wrap -ml-10 mt-8">
-            <a href="#" class="flex mt-4 ml-10">
+            <a href="/dealers" class="flex mt-4 ml-10">
                 <div class="dashboard-bnt w-64 h-44 flex items-center justify-center flex-col bg-blue-50 rounded hover:bg-blue-100 transition-all duration-300">
                     <img src="/img/admin/dashboard/dealers.svg" alt="">
                     <p class="text-lg mt-2 text-center font-semibold">Диллеры</p>

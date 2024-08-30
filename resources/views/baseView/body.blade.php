@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="/img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/js/owl-carousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="/js/owl-carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/js/fancy-box/fancybox.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>@yield('title')</title>
 </head>
