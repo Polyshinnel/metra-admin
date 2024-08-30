@@ -41,7 +41,12 @@
                             <p class="user-name w-44 ml-4 text-center text-sm">{{$dealer['name']}}</p>
                             <p class="phone w-44 ml-4 text-center text-sm">{{$dealer['phone']}}</p>
 
-                            <input type="checkbox" class="ml-3 w-4 h-4" name="" id="">
+                            @if($dealer['status'])
+                                <input type="checkbox" class="ml-3 w-4 h-4" name="" id="" checked>
+                            @else
+                                <input type="checkbox" class="ml-3 w-4 h-4" name="" id="">
+                            @endif
+
 
                             <img src="/img/more.svg" alt="" class="more-options ml-10 cursor-pointer">
 
