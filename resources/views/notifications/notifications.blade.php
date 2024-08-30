@@ -17,7 +17,7 @@
                 @if(!$notification['publish_status'])
                     <div class="notification-item flex items-start py-4 px-5 border rounded-lg border-gray-400 mt-5">
                         <div class="notification-item__img w-12 h-12 flex items-center justify-center rounded-full bg-blue-700 mt-1">
-                            @if($nofification['notification_type'] == '1')
+                            @if($notification['notification_type'] == '1')
                                 <img src="/img/bell.svg" alt="">
                             @else
                                 <img src="/img/alert.svg" alt="">
@@ -35,7 +35,7 @@
                 @else
                     <div class="notification-item flex items-start py-4 px-5 border rounded-lg border-gray-400 mt-8 bg-blue-50">
                         <div class="notification-item__img w-12 h-12 flex items-center justify-center rounded-full bg-blue-700 mt-1">
-                            @if($nofification['notification_type'] == '1')
+                            @if($notification['notification_type'] == '1')
                                 <img src="/img/bell.svg" alt="">
                             @else
                                 <img src="/img/alert.svg" alt="">
