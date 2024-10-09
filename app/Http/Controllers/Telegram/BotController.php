@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Telegram;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Storage;
@@ -22,7 +23,9 @@ class BotController extends Controller
 //        $json = json_encode($message->text, JSON_UNESCAPED_UNICODE);
 //        Storage::disk('local')->put('telegram.json', $json);
 
-        if($message->text == 'Мой id') {
+        $messageText = $message->text;
+        $messageTextArr = explode(';', $messageText);
+        if($messageTextArr[0] == 'Мой id') {
             $telegramId = $message->getChat()->getId();
             $text = sprintf('Ваш чат id: %s', $telegramId);
             $this->botsManager->sendMessage([
@@ -32,7 +35,31 @@ class BotController extends Controller
             ]);
         }
 
+        if($messageText[0] == 'Регистрация') {
+            $telegramId = $message->getChat()->getId();
+            $register = $this->register($messageTextArr, $telegramId);
+            $registerText = 'Регистрация не пройдена, ошибка в логине и/или пароле';
+            if($register) {
+                $registerText = 'Регистрация успешно завершена';
+            }
+            $this->botsManager->sendMessage([
+                'chat_id' => $telegramId,
+                'text' => $registerText,
+                'parse_mode' => 'HTML'
+            ]);
+        }
 
         return response(null, 200);
+    }
+
+    private function register(array $messageArr, $telegramId) {
+        $mail = trim($messageArr[1]);
+        $password = md5(trim($messageArr[2]));
+        $user = User::where(['mail' => $mail, 'password' => $password])->first();
+        if(!empty($user)) {
+            $user->update(['telegram_id' => $telegramId]);
+            return true;
+        }
+        return false;
     }
 }
