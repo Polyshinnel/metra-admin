@@ -24,3 +24,4 @@ $('.display-pass').click(function(){
         selector.attr('type','password')
     }
 })
+
