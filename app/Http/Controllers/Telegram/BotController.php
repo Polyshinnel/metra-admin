@@ -19,13 +19,15 @@ class BotController extends Controller
         $updates = $this->botsManager->getWebhookUpdate();
         $message = $updates->getMessage();
 
-        $json = json_encode($request, JSON_UNESCAPED_UNICODE);
-        Storage::disk('local')->put('telegram.json', $json);
-        if($message == 'Мой id') {
+//        $json = json_encode($message->text, JSON_UNESCAPED_UNICODE);
+//        Storage::disk('local')->put('telegram.json', $json);
+
+        if($message->text == 'Мой id') {
             $telegramId = $message->getChat()->getId();
+            $text = sprintf('Ваш чат id: %s', $telegramId);
             $this->botsManager->sendMessage([
                 'chat_id' => $telegramId,
-                'text' => $message,
+                'text' => $text,
                 'parse_mode' => 'HTML'
             ]);
         }
