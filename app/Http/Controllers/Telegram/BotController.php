@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Telegram;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Storage;
 use Telegram\Bot\BotsManager;
 
 class BotController extends Controller
@@ -17,6 +18,9 @@ class BotController extends Controller
     public function __invoke(Request $request): Response {
         $updates = $this->botsManager->getWebhookUpdate();
         $message = $updates->getMessage();
+
+        $json = json_encode($request, JSON_UNESCAPED_UNICODE);
+        Storage::disk('local')->put('telegram.json', $json);
         if($message == 'Мой id') {
             $telegramId = $message->getChat()->getId();
             $this->botsManager->sendMessage([
