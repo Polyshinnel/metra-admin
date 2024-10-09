@@ -29,5 +29,8 @@ class BotController extends Controller
                 'parse_mode' => 'HTML'
             ]);
         }
+
+
+        return response(null, 200);
     }
 }
