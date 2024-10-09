@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Storage;
 use Telegram\Bot\BotsManager;
+use function PHPUnit\Framework\isEmpty;
 
 class BotController extends Controller
 {
@@ -20,11 +21,12 @@ class BotController extends Controller
         $updates = $this->botsManager->getWebhookUpdate();
         $message = $updates->getMessage();
 
-//        $json = json_encode($message->text, JSON_UNESCAPED_UNICODE);
-//        Storage::disk('local')->put('telegram.json', $json);
+        $json = json_encode($updates, JSON_UNESCAPED_UNICODE);
+        Storage::disk('local')->put('telegram.json', $json);
 
         $messageText = $message->text;
         $messageTextArr = explode(';', $messageText);
+
         if($messageTextArr[0] == 'Мой id') {
             $telegramId = $message->getChat()->getId();
             $text = sprintf('Ваш чат id: %s', $telegramId);
@@ -35,7 +37,9 @@ class BotController extends Controller
             ]);
         }
 
-        if($messageText[0] == 'Регистрация') {
+
+
+        if($messageTextArr[0] == 'Регистрация') {
             $telegramId = $message->getChat()->getId();
             $register = $this->register($messageTextArr, $telegramId);
             $registerText = 'Регистрация не пройдена, ошибка в логине и/или пароле';
@@ -56,7 +60,7 @@ class BotController extends Controller
         $mail = trim($messageArr[1]);
         $password = md5(trim($messageArr[2]));
         $user = User::where(['mail' => $mail, 'password' => $password])->first();
-        if(!empty($user)) {
+        if($user) {
             $user->update(['telegram_id' => $telegramId]);
             return true;
         }

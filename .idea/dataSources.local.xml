@@ -2,9 +2,22 @@
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="PS-231.8109.199">
     <data-source name="admin-domain_metra@localhost" uuid="3476fb28-46b3-4f43-a9d9-eccab73cba21">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MARIADB" exact-version="0" />
-      <secret-storage>forget</secret-storage>
-      <schema-mapping />
+      <database-info product="MariaDB" version="10.11.6-MariaDB-1:10.11.6+maria~ubu2204" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="3.3.3" dbms="MARIADB" exact-version="10.11.6" exact-driver-version="3.3">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>admin-domain_metra</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <ssh-config-id>4f8b5cd7-a83b-4ee0-ae78-a2645bcd0bcf</ssh-config-id>
+      </ssh-properties>
     </data-source>
   </component>
 </project>
