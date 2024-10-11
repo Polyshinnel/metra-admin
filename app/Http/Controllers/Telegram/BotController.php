@@ -18,6 +18,7 @@ class BotController extends Controller
         $this->botsManager = $botsManager;
     }
     public function __invoke(Request $request): Response {
+        $this->botsManager->bot()->commandsHandler(true);
         $updates = $this->botsManager->getWebhookUpdate();
         $message = $updates->getMessage();
 
