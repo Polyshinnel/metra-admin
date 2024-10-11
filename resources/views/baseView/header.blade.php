@@ -26,6 +26,7 @@
             <ul class="space-y-2 text-sm">
                 <li><a href="/notification" class="flex items-center hover:text-blue-600 transition-all duration-300">Оповещения <div class="notification-round"><p>0</p></div></a></li>
                 <li><a href="/profile" class="hover:text-blue-600 transition-all duration-300">Профиль</a></li>
+                <li><a href="https://t.me/MetraGroupBot" class="hover:text-blue-600 transition-all duration-300">Телеграм</a></li>
             </ul>
 
             <div class="header-menu__user mt-4">
