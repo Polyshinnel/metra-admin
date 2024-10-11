@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="form-wrapper w-full h-full absolute top-0 left-0 flex justify-center items-center">
-    <form action="/auth" method="post" class="auth flex flex-col justify-center items-center w-72 m-auto">
+    <form action="/telegram-auth" method="post" class="auth flex flex-col justify-center items-center w-72 m-auto">
         <img src="/img/logo-b.svg" alt="" class="auth-logo w-48">
         <div class="input-block flex flex-col w-72 mt-7">
             <label for="login" class="text-sm font-semibold">Почта</label>
