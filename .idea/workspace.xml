@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50bc86c4-e18b-4f09-8696-d800ddcc02ca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3476fb28-46b3-4f43-a9d9-eccab73cba21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3476fb28-46b3-4f43-a9d9-eccab73cba21.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NotificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NotificationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/UserNotification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/UserNotification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/notifications/notifications.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/notifications/notifications.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +174,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728459268706</updated>
       <workItem from="1728459274443" duration="12803000" />
-      <workItem from="1728635262424" duration="4353000" />
+      <workItem from="1728635262424" duration="5019000" />
     </task>
     <servers />
   </component>
