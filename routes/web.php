@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TelegramApp\IndexController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,3 +29,7 @@ Route::middleware([\App\Http\Middleware\CheckUser::class])->group(function(){
     Route::get('/dealers/{user}', [\App\Http\Controllers\DealersController::class, 'show']);
     Route::get('/notifications', [\App\Http\Controllers\NotificationController::class, 'index']);
 });
+
+Route::get('/telegram-site', \App\Http\Controllers\TelegramApp\IndexController::class);
+Route::post('/telegram-auth',  \App\Http\Controllers\TelegramApp\AuthController::class);
+Route::get('/telegram-site/success', \App\Http\Controllers\TelegramApp\SuccessController::class);
