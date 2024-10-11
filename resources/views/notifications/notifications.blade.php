@@ -46,9 +46,9 @@
                                 <h3 class="text-base font-medium">{{$notification['notification_title']}}</h3>
                                 <p class="text-sm mt-2">{{$notification['notification_text']}}</p>
                                 <div class="publish-list flex items-center mt-1">
-                                    <p class="publish-notification text-blue-600 cursor-pointer text-blue-600 hover:text-blue-800 transition-all duration-300">Опубликовать</p>
+                                    <p class="publish-notification text-blue-600 cursor-pointer text-blue-600 hover:text-blue-800 transition-all duration-300" data-id="{{$notification['id']}}">Опубликовать</p>
 
-                                    <p class="delete-notification ml-8 text-red-600 cursor-pointer hover:text-red-800 transition-all duration-300">Удалить</p>
+                                    <p class="delete-notification ml-8 text-red-600 cursor-pointer hover:text-red-800 transition-all duration-300" data-id="{{$notification['id']}}">Удалить</p>
                                 </div>
 
                             </div>
@@ -68,13 +68,13 @@
         @endif
     </div>
 
-    <form action="" id="add-notification-form" class="px-6 py-8 border border-gray-300 rounded-md w-80 hidden">
+    <form action="/notification/create" method="POST" id="add-notification-form" class="px-6 py-8 border border-gray-300 rounded-md w-80 hidden">
         <h2 class="text-center text-2xl font-semibold">Новое оповещение</h2>
 
         <div class="add-client-form__controls">
             <div class="input-block flex flex-col w-full mt-3">
                 <label for="type-notification" class="text-sm font-semibold">Тип оповещения</label>
-                <select name="type-notification" id="type-notification" class="border border-gray-400 mt-2 h-10 rounded px-3">
+                <select name="type" id="type-notification" class="border border-gray-400 mt-2 h-10 rounded px-3">
                     <option value="1">Информация</option>
                     <option value="2">Оповещение</option>
                 </select>
@@ -83,17 +83,17 @@
 
             <div class="input-block flex flex-col w-full mt-3">
                 <label for="notification-title" class="text-sm font-semibold">Заголовок оповещения</label>
-                <input type="text" name="notification-title" id="notification-title" class="border border-gray-400 mt-2 h-10 rounded px-3" placeholder="Новое оповещение">
+                <input type="text" name="title" id="notification-title" class="border border-gray-400 mt-2 h-10 rounded px-3" placeholder="Новое оповещение">
             </div>
             <!--/.input-block-->
 
             <div class="input-block flex flex-col w-full mt-3">
                 <label for="notification-text" class="text-sm font-semibold">Текст оповещения</label>
-                <textarea name="notification-text" id="notification-text" class="border border-gray-400 mt-2 p-3 h-24 rounded text-sm" placeholder="Информация для диллеров"></textarea>
+                <textarea name="text" id="notification-text" class="border border-gray-400 mt-2 p-3 h-24 rounded text-sm" placeholder="Информация для диллеров"></textarea>
             </div>
             <!--/.input-block-->
         </div>
 
-        <button class="mt-6 w-full px-4 bg-blue-600 text-white h-9 rounded hover:bg-blue-800 transition-all duration-300">Новое оповещение</button>
+        <input type="submit" class="mt-6 w-full px-4 bg-blue-600 text-white h-9 rounded hover:bg-blue-800 transition-all duration-300" value="Новое оповещение">
     </form>
 @endsection

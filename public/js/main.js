@@ -25,3 +25,27 @@ $('.display-pass').click(function(){
     }
 })
 
+$('.publish-notification').click(function () {
+    let dataId = $(this).attr('data-id');
+    let link = '/notification/update/'+dataId
+    $.ajax({
+        url: link,
+        method: 'post',
+        success: function(data){
+            location.reload();
+        }
+    });
+})
+
+$('.delete-notification').click(function () {
+    let dataId = $(this).attr('data-id');
+    let link = '/notification/delete/'+dataId
+    $.ajax({
+        url: link,
+        method: 'post',
+        success: function(data){
+            location.reload();
+        }
+    });
+})
+

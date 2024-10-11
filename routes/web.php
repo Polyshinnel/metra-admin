@@ -33,3 +33,7 @@ Route::middleware([\App\Http\Middleware\CheckUser::class])->group(function(){
 Route::get('/telegram-site', \App\Http\Controllers\TelegramApp\IndexController::class);
 Route::post('/telegram-auth',  \App\Http\Controllers\TelegramApp\AuthController::class);
 Route::get('/telegram-site/success', \App\Http\Controllers\TelegramApp\SuccessController::class);
+
+Route::post('/notification/create', [\App\Http\Controllers\NotificationController::class, 'createNotifications']);
+Route::post('/notification/update/{notification}', [\App\Http\Controllers\NotificationController::class, 'publishNotification']);
+Route::post('/notification/delete/{notification}', [\App\Http\Controllers\NotificationController::class, 'deleteNotification']);
