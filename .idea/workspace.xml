@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50bc86c4-e18b-4f09-8696-d800ddcc02ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/faq/faq.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/news/news-create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/news/news.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/sertificates/sertificates.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3476fb28-46b3-4f43-a9d9-eccab73cba21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3476fb28-46b3-4f43-a9d9-eccab73cba21.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/AddMaterialContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AddMaterialContent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +32,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\OSPanel\modules\php\PHP_7.4\php.exe">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php-8.2\php.exe">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/psr/clock" />
@@ -138,6 +148,9 @@
       <path value="$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk" />
     </include_path>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2nBvQfVGOVMYflO7KyYfMVHvgxC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -154,8 +167,9 @@
     &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
     &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
     &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL Inserts&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/OSPanel/domains/admin-metra.web&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/sql&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -165,6 +179,18 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="SQLScriptSettings">
+    <option name="outputLayout" value="File per object by schema.groovy" />
+    <option name="outputPath" value="C:\sql" />
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.23339.16" />
+        <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.23339.16" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -175,6 +201,8 @@
       <updated>1728459268706</updated>
       <workItem from="1728459274443" duration="12803000" />
       <workItem from="1728635262424" duration="5019000" />
+      <workItem from="1735195604470" duration="3956000" />
+      <workItem from="1735200064225" duration="1357000" />
     </task>
     <servers />
   </component>

@@ -20,21 +20,21 @@
                 </div>
             </a>
 
-            <a href="#" class="flex mt-4 ml-10">
+            <a href="/news" class="flex mt-4 ml-10">
                 <div class="dashboard-bnt w-64 h-44 flex items-center justify-center flex-col bg-blue-50 rounded hover:bg-blue-100 transition-all duration-300">
                     <img src="/img/admin/dashboard/news.svg" alt="">
                     <p class="text-lg mt-2 text-center font-semibold">Новости</p>
                 </div>
             </a>
 
-            <a href="#" class="flex mt-4 ml-10">
+            <a href="/vabinars" class="flex mt-4 ml-10">
                 <div class="dashboard-bnt w-64 h-44 flex items-center justify-center flex-col bg-blue-50 rounded hover:bg-blue-100 transition-all duration-300">
                     <img src="/img/admin/dashboard/vebinars.svg" alt="">
                     <p class="text-lg mt-2 text-center font-semibold">Вебинары</p>
                 </div>
             </a>
 
-            <a href="#" class="flex mt-4 ml-10">
+            <a href="/faq" class="flex mt-4 ml-10">
                 <div class="dashboard-bnt w-64 h-44 flex items-center justify-center flex-col bg-blue-50 rounded hover:bg-blue-100 transition-all duration-300">
                     <img src="/img/admin/dashboard/faq.svg" alt="">
                     <p class="text-lg mt-2 text-center font-semibold">F.A.Q</p>
@@ -48,7 +48,7 @@
                 </div>
             </a>
 
-            <a href="#" class="flex mt-4 ml-10">
+            <a href="/sertificates" class="flex mt-4 ml-10">
                 <div class="dashboard-bnt w-64 h-44 flex items-center justify-center flex-col bg-blue-50 rounded hover:bg-blue-100 transition-all duration-300">
                     <img src="/img/admin/dashboard/sertificates.svg" alt="">
                     <p class="text-lg mt-2 text-center font-semibold">Сертификаты</p>
